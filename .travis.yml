@@ -1,0 +1,4 @@
+language: bash
+script:
+  - echo "TravisCIでテスト開始"
+  - ./test_gcd.sh
