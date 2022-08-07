@@ -38,7 +38,7 @@ echo "引数の個数が正しくありません" > /tmp/$$-anser
 diff /tmp/$$-result /tmp/$$-anser || ERROR_EXIT "引数が3つの場合でエラーです"
 
 # 引数が文字列の場合
-./gcd.sh > /tmp/$$-result
+./gcd.sh "文字列" "テスト" > /tmp/$$-result
 echo "入力値が数字ではありません" > /tmp/$$-anser
 diff /tmp/$$-result /tmp/$$-anser || ERROR_EXIT "引数が文字列の場合でエラーです"
 
